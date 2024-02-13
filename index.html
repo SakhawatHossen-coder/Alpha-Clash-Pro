@@ -16,7 +16,7 @@
      </header>
      <main class="min-h-screen bg-slate-400">
           <!-- Screen -->
-          <section class="">
+          <section id="screen-section" class="">
                <div class="container flex flex-col items-center justify-center gap-6 min-h-screen">
                     <h1 class="text-center font-bold text-7xl py-4">Alphabet Clash Pro</h1>
                     <p class="text-3xl font-semibold">Don't watch keyboard while playing....</p>
@@ -29,7 +29,7 @@
           </section>
 
           <!-- Playground -->
-          <section class="hidden">
+          <section id="playground-section" class="hidden">
                <div class="artboard py-2">
 
                     <div
@@ -37,7 +37,7 @@
                          <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-gray-800 dark:bg-gray-800 ">
                               <div class="h-full bg-gray-300 flex flex-col items-center justify-center gap-6">
                                    <h1 class="text-black font-bold text-2xl">Don't cheat.</h1>
-                                   <h1 class="text-black font-bold text-4xl">p</h1>
+                                   <h1 id="current-letter" class="text-black font-bold text-4xl">p</h1>
 
                               </div>
                          </div>
@@ -52,58 +52,58 @@
                </div>
                <!-- keyboard -->
                <div class="keyboard py-6 text-6xl flex gap-5 justify-center">
-                    <kbd
-                         class="px-2  py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">Q</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">W</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">E</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">R</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">T</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">Y</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">U</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">I</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">O</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">P</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">A</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">S</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">D</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">F</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">G</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">H</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">J</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">K</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">L</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">Z</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">X</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">C</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">V</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">B</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">N</kbd>
-                    <kbd
-                         class="px-2 py-1.5 text-2xl font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">M</kbd>
+                    <kbd class="px-2  py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="q">Q</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="w">W</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="e">E</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="r">R</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="t">T</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="y">Y</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="u">U</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="i">I</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="o">O</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="p">P</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="a">A</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="s">S</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="d">D</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="f">F</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="g">G</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="h">H</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="j">J</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="k">K</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="l">L</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="z">Z</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="x">X</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="c">C</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="v">V</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="b">B</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-900  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="n">N</kbd>
+                    <kbd class="px-2 py-1.5 text-2xl font-semibold text-gray-800  border border-gray-200 rounded-lg bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                         id="m">M</kbd>
 
                </div>
                <!-- <button></button> -->
